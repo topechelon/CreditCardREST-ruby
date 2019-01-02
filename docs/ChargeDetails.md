@@ -16,5 +16,6 @@ Name | Type | Description | Notes
 **avs_city** | **String** |  | [optional] 
 **avs_state_abbreviation** | **String** |  | [optional] 
 **avs_zip_code** | **String** |  | [optional] 
+**avs_country_abbreviation** | **String** |  | [optional] 
 
 
