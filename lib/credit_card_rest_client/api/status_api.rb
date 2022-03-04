@@ -10,7 +10,7 @@ Swagger Codegen version: 2.4.0
 
 =end
 
-require 'uri'
+require 'addressable/uri'
 
 module CreditCardRestClient
   class StatusApi

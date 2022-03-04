@@ -10,7 +10,7 @@ Swagger Codegen version: 2.4.0
 
 =end
 
-require 'uri'
+require 'addressable/uri'
 
 module CreditCardRestClient
   class Configuration
@@ -175,7 +175,7 @@ module CreditCardRestClient
 
     def base_url
       url = "#{scheme}://#{[host, base_path].join('/').gsub(/\/+/, '/')}".sub(/\/+\z/, '')
-      URI.encode_www_form_component(url)
+      Addressable::URI.encode(url)
     end
 
     # Gets API key (with prefix if set).
